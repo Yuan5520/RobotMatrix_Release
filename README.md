@@ -6,7 +6,7 @@
 
 | 依赖仓库 | 说明 | 链接 |
 |----------|------|------|
-| **BaseToolkit** (必需) | 基础框架层，提供 IEngine、Collision、Persistence、Recorder、DBManager 等模块 | [BaseToolkit](https://github.com/Yuan5520/BaseToolkit) |
+| **BaseToolkit** (必需) | 基础框架层，提供 IEngine、Collision、Persistence、Recorder、DBManager 等模块 | [BaseToolkit_Release](https://github.com/Yuan5520/BaseToolkit_Release) |
 
 > **请先导入 BaseToolkit 仓库，再导入本仓库。** RobotMatrix 的运动学、控制器、运行时模块依赖 Base 提供的引擎抽象、碰撞检测、数据持久化和数据库管理功能。
 
@@ -14,7 +14,7 @@
 
 | 仓库 | 说明 |
 |------|------|
-| [RealTimeDrive](https://github.com/Yuan5520/RealTImeDrive) | 硬件实时驱动模块，可配合 RobotMatrix 实现仿真-实机联动 |
+| [RealTimeDrive_Release](https://github.com/Yuan5520/RealTimeDrive_Release) | 硬件实时驱动模块，可配合 RobotMatrix 实现仿真-实机联动 |
 
 ---
 
@@ -43,7 +43,7 @@
 
 - Unity 2021.3 LTS 或更高版本
 - .NET Standard 2.1 / .NET Framework 4.x
-- 已安装 CyberYuan-Base
+- 已安装 [BaseToolkit_Release](https://github.com/Yuan5520/BaseToolkit_Release)
 
 ---
 
@@ -150,7 +150,7 @@ MonoBehaviour 层，将所有模块集成到 Unity 场景中。
 
 ## 统一许可证总览（可选）
 
-如果同时安装了 Base、RobotMatrix、RealDrive 三个产品，可导入 `CyberYuanLicense/` 目录，通过菜单 `CyberYuan > License Overview` 查看所有产品的许可证状态。
+如果同时安装了 RobotMatrix 和 RealDrive 两个产品，可通过菜单 `CyberYuan > License Overview` 查看所有产品的许可证状态。
 
 ## 技术支持
 
