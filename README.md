@@ -202,6 +202,10 @@ robot.Controller.EnqueueMoveL(new MoveLinearParams
 - License 未激活时，受保护的运动学 API 不会正常工作。
 - 如果同时导入源码版和 DLL 版，Unity 可能出现重复程序集或类型冲突；发布项目建议只使用 DLL 发布包。
 
+## 常见问题
+
+`MissingMethodException: RMMatrixMN.SymmetricAATInto` 通常表示 RobotMatrix 已更新，但 BaseToolkit 中的 `RobotMatrix.Math.dll` 仍是旧版本。请同步更新 BaseToolkit Release 包，确保 `RobotMatrix/Math/RobotMatrix.Math.dll` 与当前 RobotMatrix DLL 同一批次发布。
+
 ## License
 
 首次使用需要激活 RobotMatrix License。请在 Unity 菜单中打开：
